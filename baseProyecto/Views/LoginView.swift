@@ -35,42 +35,48 @@ struct LoginView: View
                         .underlineTextField()
                     Text("Olvide mi contraseña")
                         .font(.caption)
-                        .foregroundColor(.blue)
+                        .foregroundColor(Color("VerdeD"))
                         .padding(.leading, 180)
+                    Spacer()
                     NavigationLink {
                         //
                     } label: {
                         Text("Log in")
                             .font(.body)
-                            .frame(width: 200, height: 35)
+                            .frame(width: 300, height: 35)
                             .foregroundColor(.white)
-                            .background(.gray)
+                            .background(Color("Rojo"))
                             .cornerRadius(15)
                             .padding()
                     }
+                    Spacer()
                     Text("Continua con")
                         .font(.title3)
                     HStack
                     {
                         Spacer()
                         Rectangle()
-                            .scaledToFit()
-                            .frame(width: 90)
+                            .frame(width: 90, height: 50)
                             .padding(.horizontal)
                         Rectangle()
-                            .scaledToFit()
-                            .frame(width: 90)
+                            .frame(width: 90, height: 50)
                             .padding(.horizontal)
                         Rectangle()
-                            .scaledToFit()
-                            .frame(width: 90)
+                            .frame(width: 90, height: 50)
                             .padding(.horizontal)
                         Spacer()
                     }
-                    Text("No tienes cuenta? Regístrate")
-                        .font(.caption2)
-                        .foregroundColor(.blue)
-                        .padding()
+                    Spacer()
+                    HStack
+                    {
+                        Text("¿No tienes cuenta?")
+                            .font(.caption2)
+                            .foregroundColor(.black)
+                        Text("Regístrate")
+                            .font(.caption2)
+                            .foregroundColor(Color("VerdeD"))
+                    }
+                    
 
                         
                     
