@@ -20,6 +20,7 @@
 		BEC848CB2B1FB4CE0026E4EB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */; };
 		BEC848CD2B1FB6290026E4EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CC2B1FB6290026E4EB /* HomeView.swift */; };
 		BEC848CF2B1FBF590026E4EB /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CE2B1FBF590026E4EB /* TabView.swift */; };
+		BEC848D12B1FD05D0026E4EB /* RecompensasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848D02B1FD05D0026E4EB /* RecompensasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		BEC848CC2B1FB6290026E4EB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BEC848CE2B1FBF590026E4EB /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		BEC848D02B1FD05D0026E4EB /* RecompensasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecompensasView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */,
 				BEC848CC2B1FB6290026E4EB /* HomeView.swift */,
 				BEC848CE2B1FBF590026E4EB /* TabView.swift */,
+				BEC848D02B1FD05D0026E4EB /* RecompensasView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				BEC848C42B1F9C430026E4EB /* IntroView.swift in Sources */,
 				BEC848CB2B1FB4CE0026E4EB /* OnBoardingView.swift in Sources */,
 				BEC848C92B1FA6310026E4EB /* LoginView.swift in Sources */,
+				BEC848D12B1FD05D0026E4EB /* RecompensasView.swift in Sources */,
 				BEC848C72B1FA5940026E4EB /* UnderlineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

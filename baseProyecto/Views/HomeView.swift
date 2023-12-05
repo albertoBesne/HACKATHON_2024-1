@@ -11,10 +11,26 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Rectangle().ignoresSafeArea().frame(width: 600, height: 200).position(x: 200).foregroundColor(.gray.opacity(0.3))
+                Rectangle().ignoresSafeArea().frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
                 ScrollView {
                     VStack {
-                        Text("Hola Yael").font(.title).bold()
+                        HStack
+                        {
+                            VStack(alignment: .leading)
+                            {
+                                Text("Hola Isaac").font(.title).bold()
+                                Text("CDMX, México")
+                                    .font(.caption)
+                                Text("Nivel 1")
+                                    .font(.caption)
+                                Text("56 puntos")
+                                    .fontWeight(.bold)
+                                    .padding(.vertical, 5)
+                            }
+                            .padding(.horizontal, 15)
+                            Circle()
+                                .frame(width: 90)
+                        }
                     }.frame(width: 300, height: 150)
                         .background(.white)
                         .cornerRadius(10)
@@ -27,11 +43,11 @@ struct HomeView: View {
                         } label: {
                             Text("Noticias")
                                 .font(.caption2)
-                                .foregroundColor(.black)
+                                .foregroundColor(.white)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(.gray.opacity(0.5))
+                                .background(Color("VerdeF"))
                                 .cornerRadius(30)
                         }
                         Button {
