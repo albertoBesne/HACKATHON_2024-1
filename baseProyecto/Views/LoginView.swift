@@ -35,10 +35,15 @@ struct LoginView: View
                         .foregroundColor(.black)
                         .frame(width: 300)
                         .underlineTextField()
-                    Text("Olvide mi contraseña")
-                        .font(.caption)
-                        .foregroundColor(Color("VerdeD"))
-                        .padding(.leading, 180)
+                    NavigationLink {
+                        //
+                    } label: {
+                        Text("Olvide mi contraseña")
+                            .font(.caption)
+                            .foregroundColor(Color("VerdeD"))
+                            .padding(.leading, 180)
+                    }
+
                     Spacer()
                     NavigationLink {
                         //
@@ -74,9 +79,14 @@ struct LoginView: View
                         Text("¿No tienes cuenta?")
                             .font(.caption2)
                             .foregroundColor(.black)
-                        Text("Regístrate")
-                            .font(.caption2)
-                            .foregroundColor(Color("VerdeD"))
+                        NavigationLink {
+                            //
+                        } label: {
+                            Text("Regístrate")
+                                .font(.caption2)
+                                .foregroundColor(Color("VerdeD"))
+                        }
+
                     }
                     
 
