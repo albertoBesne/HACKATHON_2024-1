@@ -14,6 +14,11 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Chicas Super Poderosas")
+            Color(.blue)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            
+            Text("Hello, \nWorld!")
+                .font(.custom("RubbikBubbles-Regular", size: 50))
         }
         .padding()
     }
