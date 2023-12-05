@@ -58,7 +58,8 @@ struct LoginView: View
                     }
                     Spacer()
                     Text("Continua con")
-                        .font(.title3)
+                        .font(.callout)
+                        .padding(.bottom)
                     HStack
                     {
                         Spacer()
@@ -77,13 +78,13 @@ struct LoginView: View
                     HStack
                     {
                         Text("¿No tienes cuenta?")
-                            .font(.caption2)
+                            .font(.footnote)
                             .foregroundColor(.black)
                         NavigationLink {
                             //
                         } label: {
                             Text("Regístrate")
-                                .font(.caption2)
+                                .font(.footnote)
                                 .foregroundColor(Color("VerdeD"))
                         }
 
