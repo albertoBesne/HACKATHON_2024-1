@@ -17,7 +17,7 @@ struct IntroView: View
         {
             if navIntro
             {
-                ContentView()
+                LoginView()
             }
             else
             {
