@@ -19,6 +19,7 @@
 		BEC848C92B1FA6310026E4EB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848C82B1FA6310026E4EB /* LoginView.swift */; };
 		BEC848CB2B1FB4CE0026E4EB /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */; };
 		BEC848CD2B1FB6290026E4EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CC2B1FB6290026E4EB /* HomeView.swift */; };
+		BEC848CF2B1FBF590026E4EB /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC848CE2B1FBF590026E4EB /* TabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BEC848C82B1FA6310026E4EB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		BEC848CC2B1FB6290026E4EB /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BEC848CE2B1FBF590026E4EB /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				BEC848C82B1FA6310026E4EB /* LoginView.swift */,
 				BEC848CA2B1FB4CE0026E4EB /* OnBoardingView.swift */,
 				BEC848CC2B1FB6290026E4EB /* HomeView.swift */,
+				BEC848CE2B1FBF590026E4EB /* TabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				AB799F072B1E6261004841BC /* ContentView.swift in Sources */,
 				BEC848CD2B1FB6290026E4EB /* HomeView.swift in Sources */,
+				BEC848CF2B1FBF590026E4EB /* TabView.swift in Sources */,
 				AB799F052B1E6261004841BC /* baseProyectoApp.swift in Sources */,
 				BEC848C42B1F9C430026E4EB /* IntroView.swift in Sources */,
 				BEC848CB2B1FB4CE0026E4EB /* OnBoardingView.swift in Sources */,
