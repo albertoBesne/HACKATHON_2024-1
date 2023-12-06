@@ -91,14 +91,14 @@ struct HomeView: View
                     
                     ZStack()
                     {
-                        RoundedRectangle(cornerRadius: 25.0)
+                        Rectangle()
                             .fill(
                                 LinearGradient(
                                     gradient: Gradient(colors: [Color.white, Color("VerdeD")]),
                                     startPoint: .leading,
                                     endPoint: .bottom)
                             )
-                            .frame(width: 380, height: 150)
+                            .frame(width: 400, height: 150)
                         HStack
                         {
                             
@@ -150,28 +150,56 @@ struct HomeView: View
                             .foregroundStyle(Color("VerdeD"))
                             .fontWeight(.bold)
                     }
-//                    ZStack
-//                    {
-//                        //
-//                    }.frame(width: 320, height: 180)
-//                        .background(.gray.opacity(0.3))
-//                        .cornerRadius(10)
-//                    HStack 
-//                    {
-//                        ZStack 
-//                        {
-//                            //
-//                        }.frame(width: 200, height: 130)
-//                            .background(.gray.opacity(0.3))
-//                            .cornerRadius(10)
-//                        ZStack 
-//                        {
-//                            //
-//                        }.frame(width: 110, height: 130).background(.gray.opacity(0.3)).cornerRadius(10)
-//                        
-//                    }
+                    .padding(.top, 15)
+                    
+                    VStack
+                    {
+                        HStack
+                        {
+                            Spacer()
+                            ZStack
+                            {
+                                RoundedRectangle(cornerRadius: 15)
+                                Text("Plásticos")
+                                    .foregroundStyle(Color(.white))
+                            }
+                            .frame(width: 150, height: 110)
+                            .foregroundStyle(Color("VerdeD"))
+                            Spacer()
+                            ZStack
+                            {
+                                RoundedRectangle(cornerRadius: 15)
+                            }
+                            .frame(width: 150, height: 110)
+                            .foregroundStyle(Color("VerdeD"))
+                            Spacer()
+                        }
+                        .padding(.bottom)
+                        HStack
+                        {
+                            Spacer()
+                            ZStack
+                            {
+                                RoundedRectangle(cornerRadius: 15)
+                                Text("Plásticos")
+                                    .foregroundStyle(Color(.white))
+                            }
+                            .frame(width: 150, height: 110)
+                            .foregroundStyle(Color("VerdeD"))
+                            Spacer()
+                            ZStack
+                            {
+                                RoundedRectangle(cornerRadius: 15)
+                            }
+                            .frame(width: 150, height: 110)
+                            .foregroundStyle(Color("VerdeD"))
+                            Spacer()
+                        }
+                    }
+                    
                     Spacer()
                 }
+                .padding(.top, 20)
                 .toolbar {
                     ToolbarItemGroup(placement: .cancellationAction) {
                         Button {
