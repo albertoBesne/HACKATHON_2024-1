@@ -156,8 +156,17 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
-                                Text("Plásticos")
-                                    .foregroundStyle(Color(.white))
+                                VStack
+                                {
+                                    Text("Plásticos")
+                                        .foregroundStyle(Color(.white))
+                                        .fontWeight(.bold)
+                                        .padding(.horizontal, 20)
+                                    Image("imagen-plastico")
+                                        .resizable()
+                                        .scaledToFit()
+                                    Spacer()
+                                }
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
@@ -165,8 +174,17 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
-                                Text("Vidrio")
-                                    .foregroundStyle(Color(.white))
+                                VStack
+                                {
+                                    Text("Vidrio")
+                                        .foregroundStyle(Color(.white))
+                                        .fontWeight(.bold)
+                                        .padding(.horizontal, 20)
+                                    Image("imagen-Vidrio")
+                                        .resizable()
+                                        .scaledToFit()
+                                    Spacer()
+                                }
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
