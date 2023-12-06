@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D40AB3B2B20DCEE00E985AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB3A2B20DCEE00E985AA /* AppDelegate.swift */; };
+		7D40AB3D2B20DCEE00E985AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB3C2B20DCEE00E985AA /* ContentView.swift */; };
+		7D40AB3F2B20DCF100E985AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB3E2B20DCF100E985AA /* Assets.xcassets */; };
+		7D40AB422B20DCF100E985AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB412B20DCF100E985AA /* Preview Assets.xcassets */; };
+		7D40AB4D2B20E89100E985AA /* pino.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB4C2B20E89100E985AA /* pino.usdz */; };
+		7D40AB4F2B20EEC700E985AA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB4E2B20EEC700E985AA /* HomeView.swift */; };
+		7D40AB512B20F35E00E985AA /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB502B20F35E00E985AA /* DiscoverView.swift */; };
+		7D40AB532B20F37E00E985AA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB522B20F37E00E985AA /* ProfileView.swift */; };
+		7D40AB552B20F39D00E985AA /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB542B20F39D00E985AA /* EntryView.swift */; };
+		7D40AB572B20F8D800E985AA /* trash.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB562B20F8D800E985AA /* trash.usdz */; };
+		7D40AB592B20F8F400E985AA /* TrashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB582B20F8F400E985AA /* TrashView.swift */; };
+		7D40AB682B21070400E985AA /* PollyRounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB672B21070400E985AA /* PollyRounded-Bold.otf */; };
+		7D40AB6B2B21081C00E985AA /* JacarandaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB6A2B21081C00E985AA /* JacarandaView.swift */; };
+		7D40AB6F2B210C1F00E985AA /* jacaranda.usd in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB6E2B210C1F00E985AA /* jacaranda.usd */; };
+		7D40AB712B210C8600E985AA /* FresnoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D40AB702B210C8600E985AA /* FresnoView.swift */; };
+		7D40AB732B210CBC00E985AA /* fresno.usd in Resources */ = {isa = PBXBuildFile; fileRef = 7D40AB722B210CBC00E985AA /* fresno.usd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D40AB372B20DCEE00E985AA /* SignaAmbientVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignaAmbientVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D40AB3A2B20DCEE00E985AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7D40AB3C2B20DCEE00E985AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D40AB3E2B20DCF100E985AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D40AB412B20DCF100E985AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D40AB4C2B20E89100E985AA /* pino.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pino.usdz; sourceTree = SOURCE_ROOT; };
+		7D40AB4E2B20EEC700E985AA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7D40AB502B20F35E00E985AA /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		7D40AB522B20F37E00E985AA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7D40AB542B20F39D00E985AA /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		7D40AB562B20F8D800E985AA /* trash.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = trash.usdz; sourceTree = SOURCE_ROOT; };
+		7D40AB582B20F8F400E985AA /* TrashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashView.swift; sourceTree = "<group>"; };
+		7D40AB672B21070400E985AA /* PollyRounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PollyRounded-Bold.otf"; sourceTree = "<group>"; };
+		7D40AB692B21072A00E985AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7D40AB6A2B21081C00E985AA /* JacarandaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JacarandaView.swift; sourceTree = "<group>"; };
+		7D40AB6E2B210C1F00E985AA /* jacaranda.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = jacaranda.usd; sourceTree = "<group>"; };
+		7D40AB702B210C8600E985AA /* FresnoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FresnoView.swift; sourceTree = "<group>"; };
+		7D40AB722B210CBC00E985AA /* fresno.usd */ = {isa = PBXFileReference; lastKnownFileType = file; path = fresno.usd; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D40AB342B20DCEE00E985AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D40AB2E2B20DCEE00E985AA = {
+			isa = PBXGroup;
+			children = (
+				7D40AB392B20DCEE00E985AA /* SignaAmbientVR */,
+				7D40AB382B20DCEE00E985AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D40AB382B20DCEE00E985AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D40AB372B20DCEE00E985AA /* SignaAmbientVR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D40AB392B20DCEE00E985AA /* SignaAmbientVR */ = {
+			isa = PBXGroup;
+			children = (
+				7D40AB692B21072A00E985AA /* Info.plist */,
+				7D40AB3A2B20DCEE00E985AA /* AppDelegate.swift */,
+				7D40AB4C2B20E89100E985AA /* pino.usdz */,
+				7D40AB722B210CBC00E985AA /* fresno.usd */,
+				7D40AB562B20F8D800E985AA /* trash.usdz */,
+				7D40AB6E2B210C1F00E985AA /* jacaranda.usd */,
+				7D40AB3C2B20DCEE00E985AA /* ContentView.swift */,
+				7D40AB582B20F8F400E985AA /* TrashView.swift */,
+				7D40AB4E2B20EEC700E985AA /* HomeView.swift */,
+				7D40AB542B20F39D00E985AA /* EntryView.swift */,
+				7D40AB522B20F37E00E985AA /* ProfileView.swift */,
+				7D40AB702B210C8600E985AA /* FresnoView.swift */,
+				7D40AB6A2B21081C00E985AA /* JacarandaView.swift */,
+				7D40AB672B21070400E985AA /* PollyRounded-Bold.otf */,
+				7D40AB502B20F35E00E985AA /* DiscoverView.swift */,
+				7D40AB3E2B20DCF100E985AA /* Assets.xcassets */,
+				7D40AB402B20DCF100E985AA /* Preview Content */,
+			);
+			path = SignaAmbientVR;
+			sourceTree = "<group>";
+		};
+		7D40AB402B20DCF100E985AA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D40AB412B20DCF100E985AA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D40AB362B20DCEE00E985AA /* SignaAmbientVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D40AB452B20DCF100E985AA /* Build configuration list for PBXNativeTarget "SignaAmbientVR" */;
+			buildPhases = (
+				7D40AB332B20DCEE00E985AA /* Sources */,
+				7D40AB342B20DCEE00E985AA /* Frameworks */,
+				7D40AB352B20DCEE00E985AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignaAmbientVR;
+			productName = SignaAmbientVR;
+			productReference = 7D40AB372B20DCEE00E985AA /* SignaAmbientVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D40AB2F2B20DCEE00E985AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					7D40AB362B20DCEE00E985AA = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 7D40AB322B20DCEE00E985AA /* Build configuration list for PBXProject "SignaAmbientVR" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D40AB2E2B20DCEE00E985AA;
+			productRefGroup = 7D40AB382B20DCEE00E985AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D40AB362B20DCEE00E985AA /* SignaAmbientVR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D40AB352B20DCEE00E985AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D40AB572B20F8D800E985AA /* trash.usdz in Resources */,
+				7D40AB422B20DCF100E985AA /* Preview Assets.xcassets in Resources */,
+				7D40AB732B210CBC00E985AA /* fresno.usd in Resources */,
+				7D40AB3F2B20DCF100E985AA /* Assets.xcassets in Resources */,
+				7D40AB4D2B20E89100E985AA /* pino.usdz in Resources */,
+				7D40AB6F2B210C1F00E985AA /* jacaranda.usd in Resources */,
+				7D40AB682B21070400E985AA /* PollyRounded-Bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D40AB332B20DCEE00E985AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D40AB4F2B20EEC700E985AA /* HomeView.swift in Sources */,
+				7D40AB3D2B20DCEE00E985AA /* ContentView.swift in Sources */,
+				7D40AB532B20F37E00E985AA /* ProfileView.swift in Sources */,
+				7D40AB3B2B20DCEE00E985AA /* AppDelegate.swift in Sources */,
+				7D40AB512B20F35E00E985AA /* DiscoverView.swift in Sources */,
+				7D40AB592B20F8F400E985AA /* TrashView.swift in Sources */,
+				7D40AB6B2B21081C00E985AA /* JacarandaView.swift in Sources */,
+				7D40AB552B20F39D00E985AA /* EntryView.swift in Sources */,
+				7D40AB712B210C8600E985AA /* FresnoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D40AB432B20DCF100E985AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D40AB442B20DCF100E985AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D40AB462B20DCF100E985AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignaAmbientVR/Preview Content\"";
+				DEVELOPMENT_TEAM = 93Z932827W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignaAmbientVR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-Lab.SignaAmbientVR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D40AB472B20DCF100E985AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignaAmbientVR/Preview Content\"";
+				DEVELOPMENT_TEAM = 93Z932827W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignaAmbientVR/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "iOS-Lab.SignaAmbientVR";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D40AB322B20DCEE00E985AA /* Build configuration list for PBXProject "SignaAmbientVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D40AB432B20DCF100E985AA /* Debug */,
+				7D40AB442B20DCF100E985AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D40AB452B20DCF100E985AA /* Build configuration list for PBXNativeTarget "SignaAmbientVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D40AB462B20DCF100E985AA /* Debug */,
+				7D40AB472B20DCF100E985AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D40AB2F2B20DCEE00E985AA /* Project object */;
+}
