@@ -15,41 +15,26 @@ struct TrashView : View {
         VStack {
             TrashARViewContainer().edgesIgnoringSafeArea(.all) // Contenedor de realidad aumentada
             
-            VStack {
-                // Esto es independiente al modelo, es puro texto, si esto falta, el modelo carga con normalidad
-                Text("Organicos(Restos de Comida o de Jardinería)")
-                Text("-Huesos")
-                Text("-Cascaron de huevo")
-                Text("-Restos de verdura, hortalizas y frutas")
-                Text("-Restos de jardinería hojarascas y ramas")
-                Text("-Restos de cafe y té(incluidos filtros de papel)")
-                Text("Inorganicos Reciclables(Se pueden utilizar para producir nuevos artículos)")
-                Text("-Vidrio")
-                Text("-Metales")
-                Text("-Plásticos")
-                Text("-Papel y Carton")
-                Text("-Ropa y textiles")
-                Text("-Envases tetrapack")
-                Text("Inorgánicos No Reciclables(Residuos difíciles de reciclar)")
-                Text("-Colillas de cigarro")
-                Text("-Toallas Sanitarias")
-                Text("-Bolsas de frituras")
-                Text("-Poliestireno expandido(Unicel)")
-                Text("-Curitas")
-                Text("-Calzado")
-                Text("Manejo Especial y Voluminosos(Residuos Domesticos de gran tamaño)")
-                Text("-Computadoras")
-                Text("-Celulares")
-                Text("-Colchones")
-                Text("-Muebles rotos")
-                Text("-Televisores")
-                Text("-Lavadoras")
-                Text("-Refrigeradores")
+            ScrollView {
+                VStack {
+                    // Esto es independiente al modelo, es puro texto, si esto falta, el modelo carga con normalidad
+                    Text("Organicos(Restos de Comida o de Jardinería)")
+                    Text("Pueden ser restos de verdura, hortalizas y frutas, huesos, restos de ramas, restos de café y té")
+                    Text("Inorganicos Reciclables(Se pueden utilizar para producir nuevos artículos)")
+                    Text("Puede ser vidrio, metales, plásticos, papel, cartón")
+                    Text("Inorgánicos No Reciclables(Residuos difíciles de reciclar)")
+                    Text("Como lo son colillas de cigarro, toallas sanitarias, Bolsas de frituras, unicelulares, calzado")
+                    Text("Manejo Especial y Voluminosos(Residuos Domésticos de gran tamaño)")
+                    Text("Como celulares, computadoras, muebles rotos, refrigeradores")
+                }
+                .padding()
+                // .frame(maxHeight: 200)
+                .fixedSize()
             }
-            .padding()
-            .lineLimit(6)
-            // .frame(maxHeight: 200)
-            .fixedSize()
+            .padding(20)
+            .lineLimit(5)
+            .font(.system(size: 12))
+            
         }
     }
 }

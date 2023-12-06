@@ -21,7 +21,9 @@ struct DiscoverView: View {
                     Section("Reciclaje") {
                         NavigationLink(destination: TrashView()) { Text("🗑️ Trash") }
                     }
-                    
+                    Section("Animales") {
+                        NavigationLink(destination: PumaView()) { Text("🐱 Puma") }
+                    }
                 }
             }
         }
