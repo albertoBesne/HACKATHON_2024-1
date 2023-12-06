@@ -17,8 +17,10 @@ struct HomeView: View
         {
             ZStack 
             {
-                Rectangle().ignoresSafeArea().frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
-                ScrollView 
+                Rectangle()
+                    .ignoresSafeArea()
+                    .frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
+                ScrollView
                 {
                     VStack 
                     {
@@ -94,7 +96,7 @@ struct HomeView: View
                                 LinearGradient(
                                     gradient: Gradient(colors: [Color.white, Color("VerdeD")]),
                                     startPoint: .leading,
-                                    endPoint: .trailing)
+                                    endPoint: .bottom)
                             )
                             .frame(width: 380, height: 150)
                         HStack
@@ -106,46 +108,68 @@ struct HomeView: View
                                     .font(.caption)
                                 Text("89 puntos")
                                     .foregroundColor(Color("Rojo"))
+                                    .fontWeight(.bold)
                                 Text("Día con mayor puntaje")
                                     .font(.caption)
                                 Text("Martes con 70 puntos")
-                                    .foregroundColor(Color("VerdeD"))
+                                    .foregroundColor(Color("Rojo"))
+                                    .fontWeight(.bold)
                                 Text("Materiales reciclados")
                                     .font(.caption)
                                 Text("Metal/Plasticos")
-                                    .foregroundColor(Color("VerdeF"))
+                                    .foregroundColor(Color("Rojo"))
+                                    .fontWeight(.bold)
                             }
                             .padding(.horizontal, 30)
                             VStack(alignment: .center)
                             {
-                                Circle()
-                                    .frame(width: 60)
+                                ZStack 
+                                {
+                                    CirculoView(slices: [(5, .red), (1.6, .clear)], data: [(5, .red)]).frame(width: 60, height: 60)
+                                    Circle().frame(width: 40).foregroundColor(Color("VerdeD"))
+                                }
                                 Text("Nivel 1")
-                                    .foregroundStyle(Color("Aqua"))
+                                    .foregroundStyle(Color(.white))
+                                    .fontWeight(.bold)
+                                Text("Eco Iniciador")
+                                    .foregroundStyle(.white.opacity(0.8))
+                                    .fontWeight(.bold)
                             }
+                            .padding(.trailing)
                         }
                     }
-                    
-                    ZStack
+                    HStack(alignment: .bottom)
                     {
-                        //
-                    }.frame(width: 320, height: 180)
-                        .background(.gray.opacity(0.3))
-                        .cornerRadius(10)
-                    HStack 
-                    {
-                        ZStack 
-                        {
-                            //
-                        }.frame(width: 200, height: 130)
-                            .background(.gray.opacity(0.3))
-                            .cornerRadius(10)
-                        ZStack 
-                        {
-                            //
-                        }.frame(width: 110, height: 130).background(.gray.opacity(0.3)).cornerRadius(10)
-                        
+                        Text("Recicla y reutiliza")
+                            .font(.title2)
+                            .foregroundStyle(Color("VerdeF"))
+                            .fontWeight(.bold)
+                            .padding(.horizontal)
+                        Text("Todas las categorias")
+                            .font(.caption)
+                            .foregroundStyle(Color("VerdeD"))
+                            .fontWeight(.bold)
                     }
+//                    ZStack
+//                    {
+//                        //
+//                    }.frame(width: 320, height: 180)
+//                        .background(.gray.opacity(0.3))
+//                        .cornerRadius(10)
+//                    HStack 
+//                    {
+//                        ZStack 
+//                        {
+//                            //
+//                        }.frame(width: 200, height: 130)
+//                            .background(.gray.opacity(0.3))
+//                            .cornerRadius(10)
+//                        ZStack 
+//                        {
+//                            //
+//                        }.frame(width: 110, height: 130).background(.gray.opacity(0.3)).cornerRadius(10)
+//                        
+//                    }
                     Spacer()
                 }
                 .toolbar {
