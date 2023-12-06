@@ -197,8 +197,17 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
-                                Text("Metal")
-                                    .foregroundStyle(Color(.white))
+                                VStack
+                                {
+                                    Text("Metal")
+                                        .foregroundStyle(Color(.white))
+                                        .fontWeight(.bold)
+                                        .padding(.horizontal, 20)
+                                    Image("imagen-Lata")
+                                        .resizable()
+                                        .scaledToFit()
+                                    Spacer()
+                                }
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
@@ -206,8 +215,17 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
-                                Text("Papel")
-                                    .foregroundStyle(Color(.white))
+                                VStack
+                                {
+                                    Text("Papel")
+                                        .foregroundStyle(Color(.white))
+                                        .fontWeight(.bold)
+                                        .padding(.horizontal, 20)
+                                    Image("imagen-Papel")
+                                        .resizable()
+                                        .scaledToFit()
+                                    Spacer()
+                                }
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
@@ -217,8 +235,13 @@ struct HomeView: View
                             .font(.caption)
                             .foregroundStyle(Color("VerdeD"))
                             .fontWeight(.bold)
+                            .padding(.top, 5)
                     }
-                    
+                    Text("Noticias")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color("VerdeF"))
+                        .padding()
                     Spacer()
                 }
                 .padding(.top, 20)

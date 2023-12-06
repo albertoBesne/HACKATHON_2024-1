@@ -17,7 +17,7 @@ struct ContentView: View {
                 HomeView().tag(1)
                 LocationView().tag(2)
                 RecompensasView().tag(3)
-                Text("asdwad").tag(4)
+                UserView().tag(4)
             }
             VStack {
                 Spacer()
