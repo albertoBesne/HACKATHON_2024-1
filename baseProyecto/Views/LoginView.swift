@@ -20,12 +20,10 @@ struct LoginView: View
             {
                 VStack
                 {
-                    Circle()
+                    Image("logo-Poke")
+                        .resizable()
                         .scaledToFit()
-                        .frame(width: 150)
-                    Text("Poketrash")
-                        .font(.title)
-                        .textCase(.uppercase)
+                        .frame(width: 180)
                     TextField("Email", text: $email)
                         .foregroundColor(.black)
                         .frame(width: 300)

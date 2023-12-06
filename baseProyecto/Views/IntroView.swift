@@ -23,15 +23,10 @@ struct IntroView: View
             {
                 VStack 
                 {
-                    Circle()
+                    Image("logo-Poke")
+                        .resizable()
                         .scaledToFit()
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .frame(width: 250)
-                    Text("Poketrash")
-                        .font(.custom("", size: 40))
-                        .fontWeight(.bold)
-                        .padding()
-                    
+                        .frame(width: 230)
                 }
             }
         }
