@@ -32,7 +32,10 @@ struct ContentView: View {
                     Button{
                                             
                     } label: {
-                        Image(systemName: "qrcode.viewfinder")
+                        Image("escaneo-qr")
+                            .renderingMode(.template)
+                            .scaledToFit()
+                            .foregroundStyle(Color("VerdeF"))
                             .frame(width: 90, height: 90)
                             .background(.white)
                             .cornerRadius(50)
