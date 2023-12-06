@@ -17,23 +17,34 @@ struct TrashView : View {
             
             ScrollView {
                 VStack {
+                    Text("Basura (Reciclaje)")
+                        .font(.title)
+                        .foregroundColor(.customGreen)
+                        .padding(.bottom, 10)
                     // Esto es independiente al modelo, es puro texto, si esto falta, el modelo carga con normalidad
                     Text("Organicos(Restos de Comida o de Jardinería)")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Pueden ser restos de verdura, hortalizas y frutas, huesos, restos de ramas, restos de café y té")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Inorganicos Reciclables(Se pueden utilizar para producir nuevos artículos)")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Puede ser vidrio, metales, plásticos, papel, cartón")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Inorgánicos No Reciclables(Residuos difíciles de reciclar)")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Como lo son colillas de cigarro, toallas sanitarias, Bolsas de frituras, unicelulares, calzado")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Manejo Especial y Voluminosos(Residuos Domésticos de gran tamaño)")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                     Text("Como celulares, computadoras, muebles rotos, refrigeradores")
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topLeading)
                 }
                 .padding()
                 // .frame(maxHeight: 200)
                 .fixedSize()
             }
-            .padding(20)
             .lineLimit(5)
-            .font(.system(size: 12))
+            .font(.system(size: 18))
             
         }
     }

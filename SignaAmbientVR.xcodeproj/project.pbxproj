@@ -24,6 +24,7 @@
 		7D940E602B2117A6004ADADC /* Puma.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7D940E5F2B2117A6004ADADC /* Puma.usdz */; };
 		7D940E622B21182A004ADADC /* Jacaranda.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7D940E612B21182A004ADADC /* Jacaranda.usdz */; };
 		7D940E702B211D35004ADADC /* Fresno.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7D940E6F2B211D35004ADADC /* Fresno.usdz */; };
+		7D940E722B211ECE004ADADC /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D940E712B211ECE004ADADC /* HeaderView.swift */; };
 		7DC6F5D12B2114BD00DBD84A /* PumaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6F5D02B2114BD00DBD84A /* PumaView.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		7D940E5F2B2117A6004ADADC /* Puma.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Puma.usdz; sourceTree = "<group>"; };
 		7D940E612B21182A004ADADC /* Jacaranda.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Jacaranda.usdz; sourceTree = "<group>"; };
 		7D940E6F2B211D35004ADADC /* Fresno.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Fresno.usdz; sourceTree = "<group>"; };
+		7D940E712B211ECE004ADADC /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		7DC6F5D02B2114BD00DBD84A /* PumaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 				7D40AB582B20F8F400E985AA /* TrashView.swift */,
 				7D40AB4E2B20EEC700E985AA /* HomeView.swift */,
 				7D40AB542B20F39D00E985AA /* EntryView.swift */,
+				7D940E712B211ECE004ADADC /* HeaderView.swift */,
 				7DC6F5D02B2114BD00DBD84A /* PumaView.swift */,
 				7D40AB522B20F37E00E985AA /* ProfileView.swift */,
 				7D40AB702B210C8600E985AA /* FresnoView.swift */,
@@ -194,6 +197,7 @@
 				7D40AB512B20F35E00E985AA /* DiscoverView.swift in Sources */,
 				7DC6F5D12B2114BD00DBD84A /* PumaView.swift in Sources */,
 				7D40AB592B20F8F400E985AA /* TrashView.swift in Sources */,
+				7D940E722B211ECE004ADADC /* HeaderView.swift in Sources */,
 				7D40AB6B2B21081C00E985AA /* JacarandaView.swift in Sources */,
 				7D40AB552B20F39D00E985AA /* EntryView.swift in Sources */,
 				7D40AB712B210C8600E985AA /* FresnoView.swift in Sources */,
