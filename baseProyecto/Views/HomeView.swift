@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeView: View 
 {
-    @State private var didTap:Bool = false
+    @State private var selectedButton = 0
     
     var body: some View
     {
@@ -49,48 +49,84 @@ struct HomeView: View
                     HStack 
                     {
                         Button {
-                            self.didTap.toggle()
+                            selectedButton = 0
                         } label: {
                             Text("Resumen Semanal")
                                 .font(.caption2)
-                                .foregroundColor(didTap ? .white : .black)
+                                .foregroundColor((selectedButton == 0) ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
+                                .background((selectedButton == 0) ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
                         Button {
-                            self.didTap.toggle()
+                            selectedButton = 1
                         } label: {
                             Text("Recicla y reutiliza")
                                 .font(.caption2)
-                                .foregroundColor(didTap ? .white : .black)
+                                .foregroundColor((selectedButton == 1) ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
+                                .background((selectedButton == 1) ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
                         Button {
-                            self.didTap.toggle()
+                            selectedButton = 2
                         } label: {
                             Text("Noticias")
                                 .font(.caption2)
-                                .foregroundColor(didTap ? .white : .black)
+                                .foregroundColor((selectedButton == 2) ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
+                                .background((selectedButton == 2) ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
                     }
                     .padding(.vertical, 10)
-                    VStack(alignment: .leading)
+                    
+                    ZStack()
                     {
-                        Text("Puntos ")
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .fill(
+                                LinearGradient(
+                                    gradient: Gradient(colors: [Color.white, Color("VerdeD")]),
+                                    startPoint: .leading,
+                                    endPoint: .trailing)
+                            )
+                            .frame(width: 380, height: 150)
+                        HStack
+                        {
+                            
+                            VStack(alignment: .leading)
+                            {
+                                Text("Puntos obtenido en la última semana")
+                                    .font(.caption)
+                                Text("89 puntos")
+                                    .foregroundColor(Color("Rojo"))
+                                Text("Día con mayor puntaje")
+                                    .font(.caption)
+                                Text("Martes con 70 puntos")
+                                    .foregroundColor(Color("VerdeD"))
+                                Text("Materiales reciclados")
+                                    .font(.caption)
+                                Text("Metal/Plasticos")
+                                    .foregroundColor(Color("VerdeF"))
+                            }
+                            .padding(.horizontal, 30)
+                            VStack(alignment: .center)
+                            {
+                                Circle()
+                                    .frame(width: 60)
+                                Text("Nivel 1")
+                                    .foregroundStyle(Color("Aqua"))
+                            }
+                        }
                     }
-                    ZStack 
+                    
+                    ZStack
                     {
                         //
                     }.frame(width: 320, height: 180)
