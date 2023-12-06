@@ -10,13 +10,16 @@ import SwiftUI
 struct OnBoardingView: View {
     @State var indexSelected = 1
     @State var showNavigation = false
+    let imagenes = ["imagen-Onboarding", "imagen-Onboarding2", "imagen-Onboarding3"]
+    let titulo = ["Noticias", "Consigue recompensas", "Aprende y diviértete"]
+    let informacion = ["Mantente informado sobre las últimas novedades del medio ambiente", "¡Recicla, aprende y gana recompensas!", "¡Empieza a aprender y divertirte hoy mismo!"]
     
     var body: some View {
         NavigationStack {
             VStack {
-                Circle().frame(width: 200)
-                Text("Noticias").font(.largeTitle).bold()
-                Text("Noticias y recomendaciones interesantes de reciclaje")
+                Image((indexSelected == 1) ? "\(imagenes[0])" : (indexSelected == 2) ? "\(imagenes[1])" : "\(imagenes[2])").resizable().frame(width: 300, height: 250)
+                Text((indexSelected == 1) ? "\(titulo[0])" : (indexSelected == 2) ? "\(titulo[1])" : "\(titulo[2])").font(.largeTitle).bold()
+                Text((indexSelected == 1) ? "\(informacion[0])" : (indexSelected == 2) ? "\(informacion[1])" : "\(informacion[2])")
                 HStack {
                     if indexSelected == 1 {
                         ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
@@ -29,11 +32,6 @@ struct OnBoardingView: View {
                         Circle().frame(width: 10).foregroundColor(.gray)
                     }
                     if indexSelected == 3 {
-                        ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
-                    } else {
-                        Circle().frame(width: 10).foregroundColor(.gray)
-                    }
-                    if indexSelected == 4 {
                         ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
                     } else {
                         Circle().frame(width: 10).foregroundColor(.gray)
@@ -55,7 +53,7 @@ struct OnBoardingView: View {
                             }
                         } else {
                             Button {
-                                if indexSelected < 4 {
+                                if indexSelected < 3 {
                                     withAnimation {
                                         indexSelected += 1
                                     }

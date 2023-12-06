@@ -242,6 +242,7 @@ struct HomeView: View
                         .fontWeight(.bold)
                         .foregroundStyle(Color("VerdeF"))
                         .padding()
+                    
                     Spacer()
                 }
                 .padding(.top, 20)
