@@ -14,34 +14,34 @@ struct HomeView: View {
                 Rectangle().ignoresSafeArea().frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
                 ScrollView {
                     VStack {
-                        HStack
-                        {
-                            VStack(alignment: .leading)
-                            {
-                                Text("Hola Isaac").font(.title).bold()
-                                Text("CDMX, México")
-                                    .font(.caption)
-                                Text("Nivel 1")
-                                    .font(.caption)
-                                Text("56 puntos")
-                                    .fontWeight(.bold)
-                                    .padding(.vertical, 5)
-                            }
-                            .padding(.horizontal, 15)
-                            Circle()
-                                .frame(width: 90)
-                        }
-                    }.frame(width: 300, height: 150)
+                        
+                    }.frame(width: 340, height: 150)
                         .background(.white)
                         .cornerRadius(10)
                         .padding(.top, 20)
                         .frame(width: 350, height: 200)
                         .shadow(color: .gray, radius: 10)
+                    HStack
+                    {
+                        Circle()
+                            .frame(width: 60)
+                        VStack(alignment: .leading)
+                        {
+                            Text("Hola Isaac")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                            Text("¿Cómo mejoraremos el mundo hoy?")
+                                .font(.caption)
+                            Text("156 puntos")
+                                //.padding(.vertical, 5)
+                        }
+                        .padding(.horizontal, 15)
+                    }
                     HStack {
                         Button {
                             //
                         } label: {
-                            Text("Noticias")
+                            Text("Resumen Semanal")
                                 .font(.caption2)
                                 .foregroundColor(.white)
                                 .bold()
@@ -53,7 +53,7 @@ struct HomeView: View {
                         Button {
                             //
                         } label: {
-                            Text("¿Cómo reciclar?")
+                            Text("Recicla y reutiliza")
                                 .font(.caption2)
                                 .foregroundColor(.black)
                                 .bold()
@@ -65,7 +65,7 @@ struct HomeView: View {
                         Button {
                             //
                         } label: {
-                            Text("Reforesta")
+                            Text("Noticias")
                                 .font(.caption2)
                                 .foregroundColor(.black)
                                 .bold()
@@ -97,7 +97,12 @@ struct HomeView: View {
                         Button {
                             //
                         } label: {
-                            Text("fsdfa")
+                            Image("logob-Poke")
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(.white)
+                                .frame(width: 60)
                         }
                     }
                 }.toolbar {
@@ -105,7 +110,12 @@ struct HomeView: View {
                         Button {
                             //
                         } label: {
-                            Text("fsdfa")
+                            Image("icono-Notificaciones")
+                                .renderingMode(.template)
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundColor(.white)
+                                .frame(width: 40)
                         }
                     }
             }.navigationBarBackButtonHidden()
