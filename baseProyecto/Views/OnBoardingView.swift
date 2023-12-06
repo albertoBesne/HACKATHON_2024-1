@@ -41,7 +41,7 @@ struct OnBoardingView: View {
                 }.padding(.bottom, 110)
                 HStack {
                     NavigationLink {
-                        //
+                        ContentView()
                     } label: {
                         Text("Skip")
                     }
@@ -49,7 +49,7 @@ struct OnBoardingView: View {
                     ZStack {
                         if showNavigation {
                             NavigationLink {
-                                //
+                                ContentView()
                             } label: {
                                 Image(systemName: "house").frame(width: 50, height: 50).background(.gray.opacity(0.4)).cornerRadius(25)
                             }

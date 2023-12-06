@@ -7,20 +7,29 @@
 
 import SwiftUI
 
-struct HomeView: View {
-    var body: some View {
-        NavigationStack {
-            ZStack {
+struct HomeView: View 
+{
+    @State private var didTap:Bool = false
+    
+    var body: some View
+    {
+        NavigationStack 
+        {
+            ZStack 
+            {
                 Rectangle().ignoresSafeArea().frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
-                ScrollView {
-                    VStack {
+                ScrollView 
+                {
+                    VStack 
+                    {
                         
-                    }.frame(width: 340, height: 150)
-                        .background(.white)
-                        .cornerRadius(10)
-                        .padding(.top, 20)
-                        .frame(width: 350, height: 200)
-                        .shadow(color: .gray, radius: 10)
+                    }
+                    .frame(width: 340, height: 150)
+                    .background(.white)
+                    .cornerRadius(10)
+                    .padding(.top, 20)
+                    .frame(width: 350, height: 200)
+                    .shadow(color: .gray, radius: 10)
                     HStack
                     {
                         Circle()
@@ -37,62 +46,73 @@ struct HomeView: View {
                         }
                         .padding(.horizontal, 15)
                     }
-                    HStack {
+                    HStack 
+                    {
                         Button {
-                            //
+                            self.didTap.toggle()
                         } label: {
                             Text("Resumen Semanal")
                                 .font(.caption2)
-                                .foregroundColor(.white)
+                                .foregroundColor(didTap ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(Color("VerdeF"))
+                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
                         Button {
-                            //
+                            self.didTap.toggle()
                         } label: {
                             Text("Recicla y reutiliza")
                                 .font(.caption2)
-                                .foregroundColor(.black)
+                                .foregroundColor(didTap ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(.gray.opacity(0.5))
+                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
                         Button {
-                            //
+                            self.didTap.toggle()
                         } label: {
                             Text("Noticias")
                                 .font(.caption2)
-                                .foregroundColor(.black)
+                                .foregroundColor(didTap ? .white : .black)
                                 .bold()
                                 .padding(.horizontal, 20)
                                 .padding(.vertical, 5)
-                                .background(.gray.opacity(0.5))
+                                .background(didTap ? Color("VerdeF") : .gray.opacity(0.5))
                                 .cornerRadius(30)
                         }
-                    }.padding(.vertical, 10)
-                    ZStack {
+                    }
+                    .padding(.vertical, 10)
+                    VStack(alignment: .leading)
+                    {
+                        Text("Puntos ")
+                    }
+                    ZStack 
+                    {
                         //
                     }.frame(width: 320, height: 180)
                         .background(.gray.opacity(0.3))
                         .cornerRadius(10)
-                    HStack {
-                        ZStack {
+                    HStack 
+                    {
+                        ZStack 
+                        {
                             //
                         }.frame(width: 200, height: 130)
                             .background(.gray.opacity(0.3))
                             .cornerRadius(10)
-                        ZStack {
+                        ZStack 
+                        {
                             //
                         }.frame(width: 110, height: 130).background(.gray.opacity(0.3)).cornerRadius(10)
                         
                     }
                     Spacer()
-                }.toolbar {
+                }
+                .toolbar {
                     ToolbarItemGroup(placement: .cancellationAction) {
                         Button {
                             //

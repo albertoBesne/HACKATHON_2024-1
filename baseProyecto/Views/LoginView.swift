@@ -79,7 +79,7 @@ struct LoginView: View
                             .font(.footnote)
                             .foregroundColor(.black)
                         NavigationLink {
-                            //
+                            LoginRegistro1View()
                         } label: {
                             Text("Regístrate")
                                 .font(.footnote)
