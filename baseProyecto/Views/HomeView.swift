@@ -145,10 +145,6 @@ struct HomeView: View
                             .foregroundStyle(Color("VerdeF"))
                             .fontWeight(.bold)
                             .padding(.horizontal)
-                        Text("Todas las categorias")
-                            .font(.caption)
-                            .foregroundStyle(Color("VerdeD"))
-                            .fontWeight(.bold)
                     }
                     .padding(.top, 15)
                     
@@ -169,6 +165,8 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
+                                Text("Vidrio")
+                                    .foregroundStyle(Color(.white))
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
@@ -181,7 +179,7 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
-                                Text("Plásticos")
+                                Text("Metal")
                                     .foregroundStyle(Color(.white))
                             }
                             .frame(width: 150, height: 110)
@@ -190,11 +188,17 @@ struct HomeView: View
                             ZStack
                             {
                                 RoundedRectangle(cornerRadius: 15)
+                                Text("Papel")
+                                    .foregroundStyle(Color(.white))
                             }
                             .frame(width: 150, height: 110)
                             .foregroundStyle(Color("VerdeD"))
                             Spacer()
                         }
+                        Text("Todas las categorias")
+                            .font(.caption)
+                            .foregroundStyle(Color("VerdeD"))
+                            .fontWeight(.bold)
                     }
                     
                     Spacer()

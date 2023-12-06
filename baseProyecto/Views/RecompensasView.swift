@@ -7,71 +7,146 @@
 
 import SwiftUI
 
-struct RecompensasView: View 
-{
-    @State var indexSelected = 1
-    @State var showNavigation = false
+struct RecompensasView: View {
+    let metas = ["Supera tu récord de reciclaje por día", "Recicla en nuecos puntos de recolección", "Recicla 2 nuevos materiales", "Comparte la PokeTrash con tus amigos", "Lee un artículo de la sección de noticias"]
+    let puntos = ["50 puntos", "30 puntos", "40 puntos", "10 puntos", "5 puntos"]
     
+    let recompensa = ["10% de descuento para tu próxima compra en 'El Cuais'", "10% de descuento para tu próxima compra en la libreria", "Segundo alimento al 50% de descuento en cualquier cafetería"]
+    let lugarRecompensa = ["El Cuais", "Libreria", "Cafetería"]
     
-    var body: some View
-    {
+    var body: some View {
         NavigationStack {
-            VStack {
-                Circle().frame(width: 200)
-                Text("Recompensas").font(.largeTitle).bold()
-                Text("Recompensas sobre el perfil del usuario")
-                HStack {
-                    if indexSelected == 1 {
-                        ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
-                    } else {
-                        Circle().frame(width: 10).foregroundColor(.gray)
-                    }
-                    if indexSelected == 2 {
-                        ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
-                    } else {
-                        Circle().frame(width: 10).foregroundColor(.gray)
-                    }
-                    if indexSelected == 3 {
-                        ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
-                    } else {
-                        Circle().frame(width: 10).foregroundColor(.gray)
-                    }
-                    if indexSelected == 4 {
-                        ZStack{ }.frame(width: 30, height: 10).background(.green).cornerRadius(5)
-                    } else {
-                        Circle().frame(width: 10).foregroundColor(.gray)
-                    }
-                }.padding(.bottom, 110)
-                HStack {
-                    NavigationLink {
-                        //
-                    } label: {
-                        Text("Skip")
-                    }
-                    Spacer()
-                    ZStack {
-                        if showNavigation {
-                            NavigationLink {
-                                //
-                            } label: {
-                                Image(systemName: "house").frame(width: 50, height: 50).background(.gray.opacity(0.4)).cornerRadius(25)
-                            }
-                        } else {
-                            Button {
-                                if indexSelected < 4 {
-                                    withAnimation {
-                                        indexSelected += 1
-                                    }
-                                } else {
-                                    showNavigation.toggle()
-                                }
-                            } label: {
-                                Image(systemName: "chevron.right").frame(width: 50, height: 50).background(.gray.opacity(0.4)).cornerRadius(25)
-                            }
+            ZStack {
+                Rectangle()
+                    .ignoresSafeArea()
+                    .frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
+                ScrollView {
+                    HStack {
+                        Circle()
+                            .frame(width: 60)
+                        VStack(alignment: .leading) {
+                            Text("Hola Isaac").font(.title2).bold()
+                            Text("156 puntos")
+                            Text("Junta más puntos y obten más recompensas")
                         }
                     }
-                }.padding(.horizontal, 40).padding(.top, 40)
-            }
+                    .frame(width: 340, height: 150)
+                    .background(.white)
+                    .cornerRadius(10)
+                    .padding(.top, 20)
+                    .frame(width: 350, height: 200)
+                    .shadow(color: .gray, radius: 10)
+                    
+                    Text("Resumen semanal").font(.title).bold().padding(.leading, -90)
+                    HStack {
+                        VStack (alignment: .leading){
+                            Text("Puntos obtenido en la última semana")
+                                .font(.caption)
+                            Text("89 puntos")
+                                .foregroundColor(Color("Rojo"))
+                                .fontWeight(.bold)
+                            Text("Día con mayor puntaje")
+                                .font(.caption)
+                            Text("Martes con 70 puntos")
+                                .foregroundColor(Color("Rojo"))
+                                .fontWeight(.bold)
+                            Text("Materiales reciclados")
+                                .font(.caption)
+                            Text("Metal/Plasticos")
+                                .foregroundColor(Color("Rojo"))
+                                .fontWeight(.bold)
+                        }.padding(.trailing, 30)
+                        VStack(alignment: .center)
+                        {
+                            ZStack
+                            {
+                                CirculoView(slices: [(5, .red), (1.6, .clear)], data: [(5, .red)]).frame(width: 60, height: 60)
+                                Circle().frame(width: 40).foregroundColor(Color("VerdeD"))
+                            }
+                            Text("Nivel 1")
+                                .foregroundStyle(Color(.white))
+                                .fontWeight(.bold)
+                            Text("Eco Iniciador")
+                                .foregroundStyle(.white.opacity(0.8))
+                                .fontWeight(.bold)
+                        }
+                    }.frame(width: UIScreen.main.bounds.size.width, height: 170).background(.linearGradient(colors: [.white, .white, Color("VerdeD"), Color("VerdeD")], startPoint: .leading, endPoint: .trailing))
+                    Text("Misiones").font(.title).bold().padding(.leading, -160).padding(.top, 10)
+                    HStack {
+                        Text("Supera tu récord por día").font(.caption).bold().foregroundColor(Color("VerdeD"))
+                        Spacer()
+                        Text("50 puntos").font(.caption).bold().foregroundColor(Color("Rojo"))
+                    }.padding(.horizontal, 30)
+                    Button {
+                        //
+                    } label: {
+                        Text("Canjear puntos").font(.caption).padding(.horizontal).padding(.vertical, 8).foregroundColor(.black).overlay(
+                            RoundedRectangle(cornerRadius: 10).stroke(.gray, lineWidth: 1)
+                        )
+                    }.padding()
+                    Divider()
+                    HStack {
+                        VStack(alignment: .leading) {
+                            ForEach(0..<metas.count) { item in
+                                Text("\(metas[item])").font(.caption).padding(.vertical, 3).foregroundColor(Color("VerdeD")).bold()
+                            }
+                        }
+                        Spacer()
+                        VStack(alignment: .trailing) {
+                            ForEach(0..<puntos.count) { item in
+                                Text("\(puntos[item])").font(.caption).padding(.vertical, 3).foregroundColor(Color("Rojo")).bold()
+                            }
+                        }
+                    }.padding(.horizontal)
+                    Text("Recompensas").font(.title).bold().padding(.leading, -160).padding(.top, 10)
+                    ForEach(0..<recompensa.count) { item in
+                        HStack {
+                            Rectangle().frame(width: 100, height: 80).foregroundColor(.gray).padding(.leading)
+                            VStack(alignment: .leading) {
+                                Text("\(recompensa[item])").font(.caption)
+                                Text("\(lugarRecompensa[item])").font(.caption).foregroundColor(.gray.opacity(0.5))
+                            }
+                        }.frame(width: 340, height: 120)
+                            .background(.white)
+                            .cornerRadius(10)
+                            .padding(.top, 20)
+                            .frame(width: 350, height: 150)
+                            .shadow(color: .gray, radius: 10)
+                            .overlay(
+                                HStack {
+                                    Image("icono-Mapa").resizable().frame(width: 20, height: 20)
+                                    Text("100").bold()
+                                }.position(x:300, y: 130)
+                            )
+                    }
+                }.padding(.top, 20)
+            }.toolbar {
+                ToolbarItemGroup(placement: .automatic) {
+                    Button {
+                        //
+                    } label: {
+                        Image("icono-Notificaciones")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .frame(width: 40)
+                    }
+                }
+            }.toolbar {
+                ToolbarItemGroup(placement: .topBarLeading) {
+                    Button {
+                        //
+                    } label: {
+                        Image("logob-Poke")
+                            .renderingMode(.template)
+                            .resizable()
+                            .scaledToFit()
+                            .foregroundColor(.white)
+                            .frame(width: 40)
+                    }
+                }
+            }.navigationBarBackButtonHidden()
         }
     }
 }
