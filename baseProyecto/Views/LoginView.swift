@@ -44,7 +44,7 @@ struct LoginView: View
 
                     Spacer()
                     NavigationLink {
-                        //
+                        ContentView()
                     } label: {
                         Text("Log in")
                             .font(.body)

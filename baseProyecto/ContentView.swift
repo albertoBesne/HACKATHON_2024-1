@@ -15,19 +15,19 @@ struct ContentView: View {
         ZStack {
             TabView(selection: $selectedTab){
                 HomeView().tag(1)
-                Text("dfsaf").tag(2)
-                Text("Shalalala").tag(3)
+                LocationView().tag(2)
+                RecompensasView().tag(3)
                 Text("asdwad").tag(4)
             }
             VStack {
                 Spacer()
                 ZStack {
                     HStack{
-                        myTabButton(title: "Home", tags: 1, icon: "house").padding(.leading, 20)
-                        myTabButton(title: "Options", tags: 2, icon: "slider.horizontal.3")
+                        myTabButton(title: "Home", tags: 1, icon: "icono-Home").padding(.leading, 20)
+                        myTabButton(title: "Options", tags: 2, icon: "icono-Lugar")
                         Spacer()
-                        myTabButton(title: "Profile", tags: 3, icon: "person")
-                        myTabButton(title: "Lalala", tags: 4, icon: "seal").padding(.trailing, 20)
+                        myTabButton(title: "Profile", tags: 3, icon: "icono_Recompensas")
+                        myTabButton(title: "Lalala", tags: 4, icon: "icons_Perfil").padding(.trailing, 20)
                     }.frame(width: 350, height: 65).background(.green).cornerRadius(40)
                     Button{
                                             
@@ -42,7 +42,7 @@ struct ContentView: View {
                     }.frame(width: 90, height: 90).position(x: 195, y: 25)
                 }.frame(height: 100)
             }
-        }
+        }.navigationBarBackButtonHidden()
     }
     
     func myTabButton(title: String, tags: Int, icon: String) -> some View {
@@ -52,7 +52,7 @@ struct ContentView: View {
                     selectedTab = tags
                 }
             } label: {
-                Image(systemName: icon).foregroundColor(selectedTab == tags ? .white : .secondary)
+                Image(icon).renderingMode(.template).resizable().scaledToFit().frame(width: 30).foregroundColor(selectedTab == tags ? .white : .secondary)
             }.frame(maxWidth: 50)
                 .foregroundColor(selectedTab == tags ? .white : .secondary)
         }
