@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View 
 {
     @State private var selectedButton = 0
+    let imagenes = ["imagen-Novedades2", "imagen-Novedades3"]
+    let textos = ["Protección de 6,5 millones de acres de tierra natal en Canada", "Reciclamos conchas de moluscos en Hong Kong para cultivar nuevos arrecifes de ostras"]
     
     var body: some View
     {
@@ -22,16 +24,32 @@ struct HomeView: View
                     .frame(width: 600, height: 200).position(x: 200).foregroundColor(Color("VerdeD"))
                 ScrollView
                 {
-                    VStack 
-                    {
-                        
+                    ScrollView(.horizontal, showsIndicators: false) {
+                        HStack {
+                            ForEach(0..<2) { item in
+                                VStack(alignment: .leading)
+                                {
+                                    Image("\(imagenes[item])").resizable().overlay(
+                                        VStack (alignment: .leading){
+                                            Spacer()
+                                            Text("\(textos[item])")
+                                                .font(.caption)
+                                                .foregroundColor(.white)
+                                                .bold()
+                                                .frame(width: 190)
+                                                .padding(.bottom, 10)
+                                        }
+                                    )
+                                }
+                                .frame(width: 340, height: 150)
+                                .background(.white)
+                                .cornerRadius(10)
+                                .padding(.top, 20)
+                                .frame(width: 350, height: 200)
+                                .shadow(color: .gray, radius: 10)
+                            }
+                        }.padding(.leading, 30)
                     }
-                    .frame(width: 340, height: 150)
-                    .background(.white)
-                    .cornerRadius(10)
-                    .padding(.top, 20)
-                    .frame(width: 350, height: 200)
-                    .shadow(color: .gray, radius: 10)
                     HStack
                     {
                         Circle()
